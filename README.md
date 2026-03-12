@@ -1,19 +1,37 @@
-# family-tenant-architecture
+# Family‑Tenant Architecture — Formal Appendix
 
-This repository documents the family tenant architecture — a descriptive architecture pattern for multi‑tenant systems where one tenant represents an organisation (the “family”) and children represent branches or properties.
-At its core, the model treats each family as an individual tenant and organises data as a family graph:
+This repository contains a **formal architectural appendix** defining a
+**Family‑Tenant governance model** for multi‑tenant systems.
 
-People are nodes
-Relationships (e.g. parent, child, supervisor) are edges
-Events (such as relocation, conflict resolution, or asset transfer) are stored as time‑stamped records
+The document is written for:
+- software engineers
+- system architects
+- auditors (SOC 2 / ISO contexts)
 
-The architecture combines:
+## Purpose
 
-hierarchical tenancy (family → children)
-graph structure for relationships
-a timeline of events
-role‑based access control (Member, Supervisor, Manager)
-audit‑first design
+The appendix clarifies a hierarchical tenant structure that separates:
+- **governance and identity** (family tenant), from
+- **operational execution** (child tenants)
 
-The user experience is intentionally simple, using page‑to‑page navigation reminiscent of traditional websites rather than complex single‑page application flows.
-This repository exists to document and explain the pattern, not to provide a framework, library, or product. It is intended as a reference architecture that can be discussed, adapted, and implemented across different domains and technology stacks.
+The family tenant is explicitly defined as **non‑executable**.
+All data access, retrieval, and AI execution occur only within child tenants.
+
+## Contents
+
+- `Family-Tenant_Architecture_Appendix.pdf`  
+  A one‑page, audit‑aligned architectural appendix.
+
+## Scope
+
+This repository is **descriptive**, not promotional.
+It does not claim standardisation or certification.
+It exists to reduce ambiguity in tenant governance and execution boundaries.
+
+## Citation
+
+If referenced, please cite the PDF directly.
+
+## Copyright
+
+© 2025–2026 Arthit Pukhampuang. All rights reserved.
