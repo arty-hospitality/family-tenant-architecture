@@ -32,6 +32,14 @@ It exists to reduce ambiguity in tenant governance and execution boundaries.
 
 If referenced, please cite the PDF directly.
 
+---
+
+## About Family‑Tenant (TenantSage)
+**Family‑Tenant** is **TenantSage’s** canonical multi‑tenant architecture pattern (Family → Child).
+
+**Related repositories**
+- TenantSage core: https://github.com/arty-hospitality/TenantSag_Canonical 
+
 ## Copyright
 
 © 2025–2026 Arthit Pukhampuang. All rights reserved.
